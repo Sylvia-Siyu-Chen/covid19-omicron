@@ -1,0 +1,29 @@
+.form-group{
+    padding: 300px;
+} 
+
+.university_email{
+    padding-top: 30px;
+}
+
+.graduation_year{
+    padding-top: 30px;
+}
+
+.submit_button{
+    padding-top: 40px;
+}
+
+.site-page-header{
+    border: 1px solid rgb(225, 237, 240);
+    text-align: left;
+}
+
+.site-card-border-less-wrapper{
+    padding: 40px;
+    /* background: #ececec; */
+}
+
+.card{
+    background: #ececec;
+}
