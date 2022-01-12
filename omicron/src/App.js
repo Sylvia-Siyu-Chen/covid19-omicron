@@ -1,23 +1,22 @@
 import logo from './logo.svg';
+import React, { Component }  from 'react';
+import Home from './components/Home';
+import Login from './components/Login';
+import {Routes, Route} from 'react-router-dom';
+import {Nav, Narbar, Navbar} from 'react-bootstrap';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Navbar bg='dark' variant='dark' className='navbar' sticky='top'/>
+        <Navbar.Brand href = '/'>WELCOME</Navbar.Brand>
+        <Nav className='me-auto'>
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/login">Login</Nav.Link>
+        </Nav>
+      <Login/>
     </div>
   );
 }
